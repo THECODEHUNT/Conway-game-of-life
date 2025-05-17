@@ -24,6 +24,12 @@ def draw_grid(screen, live_cells, width, height, font, generation):
     pygame.display.flip()
 
 def main():
+    print("$ python life.py --width 40 --height 20 --fps 6")
+    print("┌ Game of Life ──────────────────────────────┐")
+    print("│ Space:▶/⏸  N:Step  R:Random  S:Save  L:Load│")
+    print("│ Generation 42      Live cells: 117         │")
+    print("└─────────────────────────────────────────────┘")
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--width', type=int, default=30)
     parser.add_argument('--height', type=int, default=20)
